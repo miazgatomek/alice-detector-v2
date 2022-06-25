@@ -8,6 +8,7 @@ import TrackEvent from "./components/track-event/track-event";
 import LineEvent from "./components/line-event/line-event";
 import React, {useState} from "react";
 import {ABOUT_TEXT} from "./utils/about-text";
+import {CustomModel} from "./components/custom-model/custom-model";
 
 
 const NUM_OF_EVENTS = 12;
@@ -99,6 +100,7 @@ function App() {
                     {showTracks && <TrackEvent eventIndex={eventIndex}/>}
                     {!showTracks && <LineEvent eventIndex={eventIndex}/>}
                     <Detector/>
+                    <CustomModel/>
                 </Canvas>
             </div>
         </div>
