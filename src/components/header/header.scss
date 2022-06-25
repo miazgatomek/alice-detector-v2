@@ -1,0 +1,31 @@
+@import "src/utils/variables";
+
+.header {
+  &__container {
+    align-items: center;
+    background-color: $color-light-black;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom: 2px solid $color-manatee;
+    border-left: 2px solid $color-manatee;
+    border-right: 2px solid $color-manatee;
+    color: $color-manatee;
+    display: flex;
+    padding-left: 8px;
+    min-height: 48px;
+  }
+
+  &__element {
+    margin-right: 20px;
+
+    &:hover {
+      color: $color-white;
+      cursor: pointer;
+    }
+  }
+
+  &__title {
+    margin: 0px 24px 0px 4px;
+    color: $color-white;
+  }
+}

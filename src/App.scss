@@ -1,0 +1,92 @@
+@import "src/utils/variables";
+
+.App {
+  background-color: $color-blue;
+  height: 100%;
+}
+
+.canvas {
+  &__container {
+    height: calc(100% - 124px);
+  }
+
+  &__detector-container {
+    background-color: $color-black;
+    border-radius: 8px;
+    border: 2px solid $color-manatee;
+    cursor: grab;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0px 8px 8px 8px;
+  }
+
+  &__header-container {
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+    width: 100%;
+  }
+
+  &__about-text {
+    background-color: $color-light-black;
+    border-radius: 8px;
+    border: 2px solid $color-manatee;
+    color: $color-manatee;
+    font-size: 18px;
+    line-height: 1.5;
+    overflow-wrap: normal;
+    padding: 12px;
+    text-justify: inter-word;
+    white-space: pre-wrap;
+    width: 75%;
+    max-width: 520px;
+  }
+
+  &__buttons-row {
+    align-items: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 8px;
+    width: 100%;
+  }
+
+  &__button-group {
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4px;
+    padding: 4px;
+  }
+
+  &__button {
+    background-color: $color-light-black;
+    border-radius: 8px;
+    border: 2px solid $color-manatee;
+    color: $color-manatee;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 4px;
+    padding: 8px;
+
+    &:hover {
+      border-color: $color-white;
+    }
+  }
+
+  &__event-index {
+    align-items: center;
+    background-color: $color-light-black;
+    border-radius: 8px;
+    border: 2px solid $color-manatee;
+    color: $color-manatee;
+    display: flex;
+    font-size: 14px;
+    height: 28px;
+    justify-content: center;
+    margin-left: 4px;
+    text-align: center;
+    width: 52px;
+  }
+}
